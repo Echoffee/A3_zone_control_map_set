@@ -8,5 +8,5 @@ if (count _points > 0) then {
 	_pos = (getMarkerPos _p) vectorAdd [((random 100)-50),((random 100)-50),0];
 	_unit setPos _pos;
 } else {
-	endMission "LOSER";
+	"LOSER" call BIS_fnc_endMission;
 };

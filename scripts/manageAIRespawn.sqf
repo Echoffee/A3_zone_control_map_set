@@ -11,15 +11,15 @@ _redz = allMapMarkers select {getMarkerColor _x == "colorOPFOR"};
 _grez = allMapMarkers select {getMarkerColor _x == "colorGUER"};
 
 
-for "_i" from 1 to ((count _bluz) / 2 - (count _blu)) do {
-    [west] execVM "spawnSquad.sqf";
+for "_i" from 1 to ((count _bluz) - (count _blu)) do {
+    [west] call echo_fnc_spawnSquad;
 };
-for "_i" from 1 to ((count _redz) / 2 - (count _red)) do {
-    [east] execVM "spawnSquad.sqf";
+for "_i" from 1 to ((count _redz) - (count _red)) do {
+    [east] call echo_fnc_spawnSquad;
 };
-for "_i" from 1 to ((count _grez) / 2 - (count _gre)) do {
-    [resistance] execVM "spawnSquad.sqf";
+for "_i" from 1 to ((count _grez) - (count _gre)) do {
+    [resistance] call echo_fnc_spawnSquad;
 };
 
 uiSleep 60;
-execVM "manageAIRespawn.sqf";
+[] spawn echo_fnc_manageAIRespawn;

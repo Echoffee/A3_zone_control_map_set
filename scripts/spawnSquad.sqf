@@ -23,4 +23,4 @@ if (count _zones > 0) then {
 	} forEach _cmp;
 };
 
-[_group] execVM "getNewObjective.sqf";
+[_group] call echo_fnc_getNewObjective;

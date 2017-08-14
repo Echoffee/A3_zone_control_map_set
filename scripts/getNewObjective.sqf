@@ -39,4 +39,4 @@ if (count _choices2 > 0) then {
 };
 
 _wp = _group addWaypoint [_next_pos, 10];
-_wp setWaypointStatements ["true", "[group this] execVM 'getNewObjective.sqf' "];
+_wp setWaypointStatements ["true", "[group this] call echo_fnc_getNewObjective "];
