@@ -1,0 +1,61 @@
+respawnOnStart = -1;
+
+class CfgFunctions
+{
+	class echo
+	{
+		class Funcs
+		{
+			tag = "echoControl";
+			class checkZoneControl
+			{
+				file = "checkZoneControl.sqf";
+				preInit = 0;
+				postInit = 0;
+				preStart = 0;
+				ext = ".sqf";
+				headerType = -1;
+			}
+			
+			class initialGetObjective
+			{
+				file = "initialGetObjective.sqf";
+				preInit = 0;
+				postInit = 0;
+				preStart = 0;
+				ext = ".sqf";
+				headerType = -1;
+			}
+			
+			class getNewObjective
+			{
+				file = "getNewObjective.sqf";
+				preInit = 0;
+				postInit = 0;
+				preStart = 0;
+				ext = ".sqf";
+				headerType = -1;
+			}
+			
+			class manageAIRespawn
+			{
+				file = "manageAIRespawn.sqf";
+				preInit = 0;
+				postInit = 0;
+				preStart = 0;
+				ext = ".sqf";
+				headerType = -1;
+			}
+			
+			class spawnSquad
+			{
+				file = "spawnSquad.sqf";
+				preInit = 0;
+				postInit = 0;
+				preStart = 0;
+				ext = ".sqf";
+				headerType = -1;
+			}
+		}
+	}
+}
